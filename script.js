@@ -40,9 +40,6 @@ async function checkWeather(city) {
       weatherIcon.src = "animated/rainy-3.svg";
     } else if (weatherMain == "Mist") {
       weatherIcon.src = isDay ? "animated/cloudy-day-2.svg" : "animated/cloudy-night-2.svg";
-      if (!isDay) {
-        weatherIcon.src = "animated/cloudy-night.svg";
-      }
     } else if (weatherMain == "Snow") {
       weatherIcon.src = "animated/snowy-6.svg";
     } else if (weatherMain == "Thunder") {
